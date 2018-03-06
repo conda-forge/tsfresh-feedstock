@@ -20,7 +20,7 @@ requirements:
   build:
     - python
     - setuptools
-    - pyscaffold
+    - pyscaffold <2.6
   run:
     - python
     - setuptools
