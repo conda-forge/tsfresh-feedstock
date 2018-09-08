@@ -14,13 +14,15 @@ source:
 build:
   number: 0
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
 requirements:
   build:
     - python
     - setuptools
     - pyscaffold <2.6
+  host:
+    - pip
   run:
     - python
     - setuptools
