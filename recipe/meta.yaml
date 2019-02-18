@@ -21,6 +21,8 @@ requirements:
     - python
     - pip
     - setuptools_scm
+    - setuptools
+    - six
   run:
     - python
     - setuptools
