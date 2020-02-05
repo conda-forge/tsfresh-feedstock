@@ -1,6 +1,6 @@
 {% set name = "tsfresh" %}
-{% set version = "0.13.0" %}
-{% set sha256 = "a6ddce6ddbbb26a709fcfbade0e83ae052ead9b30bb1de2d2307640d81e2c875" %}
+{% set version = "0.14.1" %}
+{% set sha256 = "77e4f583db4729178ef7832d070a03feb7307662ee83a275b1ac20c29ce5af27" %}
 
 package:
   name: {{ name|lower }}
@@ -37,6 +37,10 @@ requirements:
     - distributed >=1.18.3
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - tsfresh
 
