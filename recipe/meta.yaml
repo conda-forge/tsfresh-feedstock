@@ -37,6 +37,10 @@ requirements:
     - distributed >=1.18.3
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - tsfresh
 
