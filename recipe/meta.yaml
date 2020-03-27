@@ -1,6 +1,6 @@
 {% set name = "tsfresh" %}
-{% set version = "0.14.1" %}
-{% set sha256 = "77e4f583db4729178ef7832d070a03feb7307662ee83a275b1ac20c29ce5af27" %}
+{% set version = "0.15.1" %}
+{% set sha256 = "168b935448946444dfba236f9a75507f4f2b9f98c7ec243fc53c6fa072e6bc39" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   host:
@@ -49,7 +49,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: 'Automatic extraction of relevant features from time series'
+  summary: Automatic extraction of relevant features from time series
 
   doc_url: http://tsfresh.readthedocs.io/
   dev_url: https://github.com/blue-yonder/tsfresh
