@@ -5,7 +5,7 @@ Home: http://github.com/blue-yonder/tsfresh
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Automatic extraction of relevant features from time series
 
