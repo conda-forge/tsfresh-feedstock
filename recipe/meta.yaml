@@ -1,6 +1,6 @@
 {% set name = "tsfresh" %}
-{% set version = "0.16.0" %}
-{% set sha256 = "c9a599da84384723f51b23c07e2b8bc4bd8bbba12b153657d48c0b750f3c6dd0" %}
+{% set version = "0.17.0" %}
+{% set sha256 = "f3db06063116c3cca6ef1ad30dcd50a0cc4a4d0688cc34cc8843d9bd400da969" %}
 
 package:
   name: {{ name|lower }}
