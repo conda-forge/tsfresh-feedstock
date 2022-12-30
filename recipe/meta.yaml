@@ -1,6 +1,6 @@
 {% set name = "tsfresh" %}
-{% set version = "0.19.0" %}
-{% set sha256 = "ffee3a72c0a889da6c271f7fac991e7e96583aab981d6741f89fb6637eba56e6" %}
+{% set version = "0.20.0" %}
+{% set sha256 = "1d9a0f06cf791167239c7fe7e32e3a46653f97a9b27937090273b4507ec4709c" %}
 
 package:
   name: {{ name|lower }}
@@ -18,25 +18,25 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
     - setuptools_scm
     - setuptools
   run:
-    - python >=3.6
+    - python >=3.8
     - setuptools
-    - requests >=2.9.1
-    - numpy >=1.12.1
-    - pandas >=0.20.3,!=0.24.*
-    - scipy >=1.2.0
-    - statsmodels >=0.8.0
-    - patsy >=0.4.1
-    - scikit-learn >=0.19.0
-    - tqdm >=4.10.0
-    - dask >=0.15.2
-    - distributed >=1.18.3
-    - matrixprofile >=1.1.10,<2.0.0
-    - stumpy >=1.7.2
+    - requests>=2.9.1
+    - numpy>=1.15.1
+    - pandas>=0.25.0
+    - scipy>=1.2.0
+    - statsmodels>=0.13
+    - patsy>=0.4.1
+    - scikit-learn>=0.22.0
+    - tqdm>=4.10.0
+    - dask[dataframe]>=2.9.0
+    - distributed>=2.11.0
+    - stumpy>=1.7.2
+    - cloudpickle
 
 test:
   requires:
