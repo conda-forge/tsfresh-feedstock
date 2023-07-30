@@ -22,7 +22,7 @@ requirements:
     - pip
     - setuptools_scm
     - setuptools
-    - pyscaffold<4,>=3.3a0
+    - pyscaffold <4,>=3.3a0
   run:
     - python >=3.8
     - setuptools
