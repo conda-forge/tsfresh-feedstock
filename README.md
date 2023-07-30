@@ -1,11 +1,11 @@
-About tsfresh
-=============
+About tsfresh-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tsfresh-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/blue-yonder/tsfresh
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tsfresh-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automatic extraction of relevant features from time series
 
