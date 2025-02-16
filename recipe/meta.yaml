@@ -1,6 +1,6 @@
 {% set name = "tsfresh" %}
-{% set version = "0.20.3" %}
-{% set sha256 = "cd12e1bfa2d51fff476c5384c630208fedbc8c098730e7907994b9d742258656" %}
+{% set version = "0.21.0" %}
+{% set sha256 = "9942c2f78523ea12d0403b443293e45d4f1e78f750e5264fabddd2575cd75c43" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
@@ -24,6 +24,7 @@ requirements:
     - setuptools
     - pyscaffold <4,>=3.3a0
   run:
+    - pywavelets
     - python >={{ python_min }}
     - setuptools
     - requests >=2.9.1
