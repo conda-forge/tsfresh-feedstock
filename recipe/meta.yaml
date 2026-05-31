@@ -1,6 +1,6 @@
 {% set name = "tsfresh" %}
-{% set version = "0.21.1" %}
-{% set sha256 = "304316ebc20b7a33df39b9decdf1ae74c0877b8a36f1187ad2faf4e639d3f8bb" %}
+{% set version = "0.21.2" %}
+{% set sha256 = "a960f474498da07f5ed9992f2054db1d7483e224fdf91d89c28535c3af5cb17d" %}
 
 package:
   name: {{ name|lower }}
@@ -37,7 +37,7 @@ requirements:
     - tqdm >=4.10.0
     - dask[dataframe] >=2.9.0
     - distributed >=2.11.0
-    - stumpy >=1.7.2
+    - stumpy >=1.11.1
     - cloudpickle
 
 test:
