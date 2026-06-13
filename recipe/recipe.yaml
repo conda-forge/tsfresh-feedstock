@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: tsfresh
   version: "0.21.2"
-  sha256: a960f474498da07f5ed9992f2054db1d7483e224fdf91d89c28535c3af5cb17d
 
 package:
   name: ${{ name|lower }}
@@ -11,8 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: ${{ sha256 }}
-  file_name: ${{ name }}-${{ version }}.tar.gz
+  sha256: a960f474498da07f5ed9992f2054db1d7483e224fdf91d89c28535c3af5cb17d
 
 build:
   number: 0
